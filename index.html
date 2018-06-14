@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Psychic Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="game.js"></script>
+    <!-- Make sure to use relative paths to your files -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" /> -->
 </head>
 <body>
-
     <h1>The Psychic Game!</h1>
     
     <h2>Guess What Letter I'm Thinking Of?</h2>
-
-    <p>Wins:</p>
-
-    <p>Losses:</p>
-
-    <p>Guesses Left:</p>
-
-    <p>Your Guesses So Far:</p>
-
-
+    <!-- This is an HTML comment -->
+    <!-- Need to set up random character assortment, is there a way to do this,
+    or input every letter of the alphabet in an array? -->
+    <p>Wins: <span id="wins"><span></p>
+    <!-- Number starts at 0. When guess matches random character, win number goes up by 1 
+    when guess = true, number goes up by 1 -->
+    <p>Losses: <span id="losses"><span></p>
+    <!-- when all 9 guesses have been used up, then loss number goes up by 1 -->
     
+    <p>Guesses Left: <span id="guess-amt"></span></p>
+    <p>Your Guesses So Far: <span id="letters-guessed"></span></p>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
